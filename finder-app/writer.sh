@@ -15,7 +15,7 @@ then
 
 else
 	fileDirectory=$(dirname "$1")
-	echo $fileDirectory
+	#echo $fileDirectory
 	if [ ! -d  $fileDirectory ]
 	then
 		mkdir -p $fileDirectory
