@@ -14,7 +14,13 @@ then
 	exit 1
 
 else
-
+	fileDirectory=$(dirname "$1")
+	echo $fileDirectory
+	if [ ! -d  $fileDirectory ]
+	then
+		mkdir -p $fileDirectory
+	fi
 	echo "$2">"$1"
+		
 	exit 0
 fi
